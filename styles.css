@@ -1,0 +1,27 @@
+body {
+    background-color: #171717;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 48px;
+    color: #eeeeee;
+  }
+  
+  h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #cacaca;
+  }
+  
+  #daysLeft {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 72px;
+    font-weight: bold;
+    color: #F08080;
+  }
+  
