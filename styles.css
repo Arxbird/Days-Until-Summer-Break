@@ -1,27 +1,52 @@
 body {
-    background-color: #171717;
-    font-family: 'Helvetica Neue', sans-serif;
+  background-color: #171717;
+  font-family: 'Helvetica Neue', sans-serif;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 48px;
+  color: #eeeeee;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+  color: #cacaca;
+}
+
+#daysLeft {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 72px;
+  font-weight: bold;
+  color: #F08080;
+}
+
+.Icon {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.6;
+  object-fit: contain;
+  animation: spin 120s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
   }
-  
-  h1 {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 48px;
-    color: #eeeeee;
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
-  
-  h3 {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 24px;
-    color: #cacaca;
-  }
-  
-  #daysLeft {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 72px;
-    font-weight: bold;
-    color: #F08080;
-  }
-  
+}
+
+
+
+
