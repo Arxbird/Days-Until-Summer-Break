@@ -6,7 +6,7 @@
     <link rel="icon" href="Img/Icon.png">
 
     <meta name="title" content="Days Until Summer Break">
-    <meta name="description" content=getTimeDifference(1686315600000)>
+    <meta name="description" content="" id="descriptionMeta">
     <meta name="robots" content="index,follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
@@ -20,6 +20,14 @@
         <p id="daysLeft">30 Days</p>
 
         <img src="Img/Icon.png" class="Icon">
+
+        <script>
+            // Get the description meta tag element
+            const descriptionMeta = document.getElementById("descriptionMeta");
+
+            // Set its content attribute to the result of calling getTimeDifference()
+            descriptionMeta.setAttribute("content", getTimeDifference(1686315600000));
+        </script>
 
     </body>
 </html>
