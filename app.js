@@ -21,7 +21,7 @@ function getTimeDifference(date) {
   
   
   function updateDaysLeft() {
-    const summerBreakDate = new Date(1686315600 * 1000);
+    const summerBreakDate = new Date(1686175200 * 1000);
     const timezoneOffset = summerBreakDate.getTimezoneOffset() * 60 * 1000;
     const localSummerBreakDate = new Date(summerBreakDate.getTime() + timezoneOffset);
     const daysLeftElement = document.getElementById("daysLeft");
