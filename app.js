@@ -18,20 +18,22 @@ function getTimeDifference(date) {
     return `${hoursLeft} hours, ${minutesLeft} minutes, ${secondsLeft} seconds left`;
   }
 }
+
+function updateDaysLeft() {
+  const summerBreakDate = new Date(1686229200 * 1000);
+  const timezoneOffset = summerBreakDate.getTimezoneOffset() * 60 * 1000;
+  const localSummerBreakDate = new Date(summerBreakDate.getTime() + timezoneOffset);
+  const daysLeftElement = document.getElementById("daysLeft");
+  const text = getTimeDifference(localSummerBreakDate);
+  daysLeftElement.innerHTML = text;
   
-  
-  function updateDaysLeft() {
-    const summerBreakDate = new Date(1686229200 * 1000);
-    const timezoneOffset = summerBreakDate.getTimezoneOffset() * 60 * 1000;
-    const localSummerBreakDate = new Date(summerBreakDate.getTime() + timezoneOffset);
-    const daysLeftElement = document.getElementById("daysLeft");
-    const text = getTimeDifference(localSummerBreakDate);
-    daysLeftElement.innerHTML = text;
-  
+  if (text != "Summer break!") {
     window.requestAnimationFrame(updateDaysLeft);
+  } else {
+    var iconElement = document.getElementById("icon");
   }
-  
-  window.onload = function() {
-    updateDaysLeft();
-  };
-  
+}
+
+window.onload = function() {
+  // updateDaysLeft();
+};

@@ -38,6 +38,25 @@ h3 {
   animation: spin 120s linear infinite;
 }
 
+a:link {
+  color: #F08080;
+  background-color: transparent;
+  text-decoration: none;
+  
+}
+
+a:visited {
+  color: #F08080;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d94646;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 @keyframes spin {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
